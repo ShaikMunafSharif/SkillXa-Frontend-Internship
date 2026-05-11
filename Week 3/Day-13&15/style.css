@@ -3,8 +3,10 @@ body {
     font-family: Arial;
 }
 
+/* Hero Section */
 .hero {
     height: 100vh;
+
     background: linear-gradient(to right, #2563eb, #111827);
 
     color: white;
@@ -14,29 +16,37 @@ body {
 
     justify-content: center;
     align-items: center;
+
+    text-align: center;
 }
 
-/* Button transition */
+/* Button Styling */
 button {
     padding: 10px 20px;
+
     border: none;
     border-radius: 5px;
+
+    cursor: pointer;
 
     transition: 0.3s;
 }
 
-/* Hover effect */
+/* Hover Effect */
 button:hover {
-    background-color: yellow;
+    background-color: #facc15;
+
     transform: scale(1.1);
 }
 
-/* Text animation */
+/* Heading Animation */
 h1 {
     animation: slide 2s;
 }
 
+/* Keyframes */
 @keyframes slide {
+
     from {
         transform: translateY(-50px);
         opacity: 0;
@@ -45,5 +55,26 @@ h1 {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 16px;
     }
 }
